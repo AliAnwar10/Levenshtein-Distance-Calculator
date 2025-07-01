@@ -5,8 +5,8 @@ from typing import List, Optional
 import time
 
 app = FastAPI(
-    title="Edit Distance Calculator API",
-    description="Calculate minimum edit distance between strings using dynamic programming",
+    title="Levenshtein Distance Calculator API",
+    description="Calculate Levenshtein distance between strings using dynamic programming",
     version="1.0.0"
 )
 
@@ -41,7 +41,7 @@ class EditDistanceResponse(BaseModel):
 
 def calculate_edit_distance(str1: str, str2: str) -> EditDistanceResponse:
     """
-    Calculate the minimum edit distance between two strings using dynamic programming.
+    Calculate the Levenshtein distance between two strings using dynamic programming.
     
     Args:
         str1: First string
@@ -141,7 +141,7 @@ def calculate_edit_distance(str1: str, str2: str) -> EditDistanceResponse:
 @app.get("/")
 async def root():
     return {
-        "message": "Edit Distance Calculator API",
+        "message": "Levenshtein Distance Calculator API",
         "version": "1.0.0",
         "endpoints": {
             "calculate": "/calculate_edit_distance",
@@ -156,7 +156,7 @@ async def health_check():
 @app.post("/calculate_edit_distance", response_model=EditDistanceResponse)
 async def calculate_edit_distance_endpoint(request: EditDistanceRequest):
     """
-    Calculate the minimum edit distance between two strings.
+    Calculate the Levenshtein distance between two strings.
     
     Args:
         request: EditDistanceRequest containing the two strings
@@ -178,7 +178,7 @@ async def calculate_edit_distance_endpoint(request: EditDistanceRequest):
     except Exception as e:
         raise HTTPException(
             status_code=500,
-            detail=f"Error calculating edit distance: {str(e)}"
+            detail=f"Error calculating Levenshtein distance: {str(e)}"
         )
 
 if __name__ == "__main__":

@@ -20,7 +20,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
         </div>
         <div>
           <h2 className="text-2xl font-bold text-gray-900">Results</h2>
-          <p className="text-gray-600">Edit distance calculation results</p>
+          <p className="text-gray-600">Levenshtein distance calculation results</p>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
             {result.distance}
           </div>
           <div className="text-sm font-medium text-indigo-800">
-            Edit Distance
+            Levenshtein Distance
           </div>
         </motion.div>
 
@@ -97,7 +97,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
         </h3>
         <div className="text-sm text-gray-600">
           <p>
-            The minimum edit distance between the two strings is{' '}
+            The Levenshtein distance between the two strings is{' '}
             <span className="font-bold text-indigo-600">{result.distance}</span>{' '}
             operations. This means you need a minimum of {result.distance}{' '}
             insertions, deletions, or substitutions to transform one string into the other.

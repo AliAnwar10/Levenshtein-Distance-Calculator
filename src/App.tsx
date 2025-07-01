@@ -76,7 +76,7 @@ function App() {
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-gray-900">
-                  Edit Distance Calculator
+                  Levenshtein Distance Calculator
                 </h1>
                 <p className="text-gray-600">
                   Visualize Minimum Edit Distance with Dynamic Programming

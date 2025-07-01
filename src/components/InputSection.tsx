@@ -35,7 +35,7 @@ export const InputSection: React.FC<InputSectionProps> = ({
         </div>
         <div>
           <h2 className="text-2xl font-bold text-gray-900">String Input</h2>
-          <p className="text-gray-600">Enter two strings to calculate their edit distance</p>
+          <p className="text-gray-600">Enter two strings to calculate their Levenshtein distance</p>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ export const InputSection: React.FC<InputSectionProps> = ({
           className="flex-1 bg-indigo-500 hover:bg-indigo-600 disabled:bg-indigo-300 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2"
         >
           <Calculator className="w-5 h-5" />
-          {isCalculating ? 'Calculating...' : 'Calculate Edit Distance'}
+          {isCalculating ? 'Calculating...' : 'Calculate Levenshtein Distance'}
         </motion.button>
 
         <motion.button

@@ -1,5 +1,5 @@
 {
-  "name": "edit-distance-calculator",
+  "name": "levenshtein-distance-calculator",
   "private": true,
   "version": "0.0.0",
   "type": "module",

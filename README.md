@@ -1,6 +1,6 @@
-# Edit Distance Calculator
+# Levenshtein Distance Calculator
 
-A full-stack web application for calculating and visualizing the Minimum Edit Distance (Levenshtein Distance) between two strings. This project demonstrates fundamental concepts in Natural Language Processing (NLP) and Dynamic Programming through an interactive, beautifully designed interface.
+A full-stack web application for calculating and visualizing the Levenshtein Distance between two strings. This project demonstrates fundamental concepts in Natural Language Processing (NLP) and Dynamic Programming through an interactive, beautifully designed interface.
 
 ## 🌟 Features
 
@@ -13,7 +13,7 @@ A full-stack web application for calculating and visualizing the Minimum Edit Di
 - **Smooth Animations**: Framer Motion animations for enhanced user experience
 
 ### Backend (Python + FastAPI)
-- **RESTful API**: Clean API endpoints for edit distance calculations
+- **RESTful API**: Clean API endpoints for Levenshtein distance calculations
 - **Dynamic Programming**: Efficient Wagner-Fischer algorithm implementation
 - **Operation Tracking**: Backtracking to find optimal transformation sequence
 - **CORS Support**: Ready for frontend integration
@@ -89,7 +89,7 @@ Recurrence:
 ## 🏗️ Project Structure
 
 ```
-edit-distance-calculator/
+levenshtein-distance-calculator/
 ├── src/
 │   ├── components/
 │   │   ├── InputSection.tsx          # String input interface
@@ -128,7 +128,7 @@ edit-distance-calculator/
 
 ## 🔧 API Reference
 
-### Calculate Edit Distance
+### Calculate Levenshtein Distance
 ```http
 POST /calculate_edit_distance
 ```

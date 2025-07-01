@@ -1,6 +1,6 @@
-# Edit Distance Calculator API
+# Levenshtein Distance Calculator API
 
-A FastAPI backend for calculating minimum edit distance between strings using dynamic programming.
+A FastAPI backend for calculating Levenshtein distance between strings using dynamic programming.
 
 ## Features
 
@@ -42,7 +42,7 @@ Once the server is running, visit:
 
 ### POST /calculate_edit_distance
 
-Calculate minimum edit distance between two strings.
+Calculate Levenshtein distance between two strings.
 
 **Request Body:**
 ```json
